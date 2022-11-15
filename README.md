@@ -30,7 +30,7 @@ make all
 - Telegram
 - Zoom
 - Postman
-- Docker
+- Docker Desktop
 - Raycast (RIP Alfred)
 - Rectangle
 - Bartender
