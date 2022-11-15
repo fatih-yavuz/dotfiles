@@ -1,0 +1,22 @@
+[user]
+	name = Fatih Yavuz
+	email = fatihjy@gmail.com
+
+[push]
+	autoSetupRemote = true
+
+[core]
+	editor = code --wait
+
+[alias]
+	co = checkout
+	cob = checkout -b
+	cm = commit
+	type = cat-file -t
+	dump = cat-file -p
+    del = branch -D
+    br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+    undo = reset HEAD~1 --mixed
+    res = !git reset --hard
+    p = !git push origin HEAD
+    lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
