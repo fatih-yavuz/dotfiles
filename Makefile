@@ -15,3 +15,5 @@ git: remove-git
 	echo "Setting up git configuration"
 	ln -s $(PWD)/.gitconfig ~/.gitconfig
 	ln -s $(PWD)/.global_gitignore ~/.global_gitignore
+
+all: git zsh
