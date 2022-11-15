@@ -20,7 +20,7 @@ make dev
 make all
 ```
 
-## The GUI based applications that I love 
+## The GUI based applications that I use everyday 
 - iTerm2
 - VSCode
 - Chrome
