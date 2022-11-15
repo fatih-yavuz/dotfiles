@@ -11,9 +11,15 @@ remove-git:
 	rm -rf ~/.gitconfig
 	rm -rf ~/.global_gitignore
 
+install-essential-software:
+	bash $(PWD)/scripts/install-essential-software.sh
+
 git: remove-git
 	echo "Setting up git configuration"
 	ln -s $(PWD)/.gitconfig ~/.gitconfig
 	ln -s $(PWD)/.global_gitignore ~/.global_gitignore
 
-all: git zsh
+dev:
+	zsh $(PWD)/watch.sh
+
+dots: zsh git
