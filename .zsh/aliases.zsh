@@ -21,3 +21,4 @@ alias psmem='ps | sort -nr -k 4 | head -5'
 alias pscpu='ps | sort -nr -k 3 | head -5'
 
 alias header='curl -I'
+alias pr='gh pr view --web "$(git symbolic-ref --short HEAD)"'
